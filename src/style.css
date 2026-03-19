@@ -110,6 +110,19 @@ h1, h2, h3, h4 {
   font-weight: 900;
   font-size: 1.25rem;
   letter-spacing: -0.02em;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* 確保您上傳的深藍色 Logo 在深色模式下清晰可見，我們加上了一個圓形微白底 */
+.logo-img {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  background-color: #f8fafc;
+  border-radius: 50%;
+  padding: 4px;
 }
 
 .nav-links {
