@@ -115,14 +115,14 @@ h1, h2, h3, h4 {
   gap: 0.5rem;
 }
 
-/* 確保您上傳的深藍色 Logo 在深色模式下清晰可見，我們加上了一個圓形微白底 */
+/* 保持 Logo 原始比例與適當位置 */
 .logo-img {
-  height: 36px;
+  height: 42px;
   width: auto;
   object-fit: contain;
-  background-color: #f8fafc;
-  border-radius: 50%;
-  padding: 4px;
+  display: block;
+  /* 使用外發光濾鏡讓深色 Logo 在深色背景凸顯，不影響原圖形狀 */
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.6));
 }
 
 .nav-links {
