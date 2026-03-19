@@ -5,21 +5,21 @@
   --font-sans: 'Inter', 'Noto Sans TC', sans-serif;
   
   /* Color Palette - Premium Dark */
-  --bg-core: #0f172a; /* tailwind slate-900 */
-  --bg-surface: #1e293b; /* tailwind slate-800 */
-  --text-main: #f8fafc; /* tailwind slate-50 */
-  --text-muted: #94a3b8; /* tailwind slate-400 */
+  --bg-core: #0f172a;
+  --bg-surface: #1e293b;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
   
-  --accent-primary: #38bdf8; /* sky-400 */
-  --accent-primary-hover: #0ea5e9; /* sky-500 */
-  --accent-gradient: linear-gradient(135deg, #38bdf8, #818cf8);
+  --accent-primary: #A855F7; /* Purple-500 */
+  --accent-primary-hover: #9333EA; /* Purple-600 */
+  --accent-gradient: linear-gradient(135deg, #A855F7, #FBBF24); /* Purple to Gold */
   
   --glass-bg: rgba(30, 41, 59, 0.4);
   --glass-border: rgba(255, 255, 255, 0.08);
   
   --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.5), 0 4px 6px -2px rgba(0, 0, 0, 0.3);
-  --shadow-glow: 0 0 20px rgba(56, 189, 248, 0.2);
+  --shadow-glow: 0 0 20px rgba(168, 85, 247, 0.3); /* Purple Glow */
   
   --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
@@ -42,8 +42,8 @@ html {
 body {
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.05) 0%, transparent 50%),
-    radial-gradient(circle at 85% 30%, rgba(129, 140, 248, 0.05) 0%, transparent 50%);
+    radial-gradient(circle at 15% 50%, rgba(168, 85, 247, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(251, 191, 36, 0.08) 0%, transparent 50%);
 }
 
 a {
@@ -142,13 +142,13 @@ h1, h2, h3, h4 {
 .btn-primary {
   background: var(--accent-primary);
   color: #fff;
-  box-shadow: 0 4px 14px 0 rgba(56, 189, 248, 0.39);
+  box-shadow: 0 4px 14px 0 rgba(168, 85, 247, 0.39);
 }
 
 .btn-primary:hover {
   background: var(--accent-primary-hover);
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(56, 189, 248, 0.4);
+  box-shadow: 0 6px 20px rgba(168, 85, 247, 0.5);
 }
 
 .btn-secondary {
@@ -211,9 +211,9 @@ h1, h2, h3, h4 {
 .badge {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background: rgba(56, 189, 248, 0.1);
+  background: rgba(168, 85, 247, 0.15);
   color: var(--accent-primary);
-  border: 1px solid rgba(56, 189, 248, 0.2);
+  border: 1px solid rgba(168, 85, 247, 0.3);
   border-radius: 9999px;
   font-size: 0.875rem;
   font-weight: 500;
@@ -279,7 +279,7 @@ h1, h2, h3, h4 {
 .orb-2 {
   width: 250px;
   height: 250px;
-  background: #818cf8;
+  background: #FBBF24; /* Gold */
   bottom: -50px;
   right: 10%;
   animation: float 8s infinite alternate-reverse ease-in-out;
